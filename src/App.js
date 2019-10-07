@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import CalculatorType from './components/CalculatorType';
+
+import './App.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   return (
+    <div>
+      <Header />
+      <div className="app container py-3">
+        <div className="row justify-content-center">
+          <div className="col-sm-12 col-md-6">
+            <CalculatorType cardHeader="Empleado por Planilla" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
